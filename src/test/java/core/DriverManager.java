@@ -21,8 +21,8 @@ public abstract class DriverManager {
             createWebDriver();
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10000,TimeUnit.MILLISECONDS);
-        driver.manage().timeouts().pageLoadTimeout(30000, TimeUnit.MILLISECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         return driver;
     }
 

@@ -1,7 +1,7 @@
 package tests;
 
-import core.DriverManager;
 import core.DriverManagerFactory;
+import core.DriverManager;
 import core.DriverType;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -27,6 +27,6 @@ public class TestSuite {
 
     @AfterTest
     public void cleanup(){
-        webDriver.quit();
+        driverManager.quitWebDriver();
     }
 }
