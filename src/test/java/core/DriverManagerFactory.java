@@ -7,6 +7,15 @@ public class DriverManagerFactory {
             case CHROME:
                 driverManager = new ChromeDriverManager();
                 break;
+            case FIREFOX:
+                driverManager = new FireforxDriverManager();
+                break;
+            case SAFARI:
+                driverManager = new SafariDriverManager();
+                break;
+            case IE:
+                driverManager = new IEDriverManager();
+                break;
             default:
                 driverManager = new ChromeDriverManager();
                 break;

@@ -2,6 +2,8 @@ package core;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public abstract class DriverManager {
     protected WebDriver driver;
 
@@ -18,6 +20,8 @@ public abstract class DriverManager {
         if(null==driver){
             createWebDriver();
         }
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         return driver;
     }
 
