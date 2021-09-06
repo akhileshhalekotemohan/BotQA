@@ -3,7 +3,7 @@ package core;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 
-public class IEDriver extends DriverManager{
+public class IEDriverManager extends DriverManager{
 
 
     @Override
