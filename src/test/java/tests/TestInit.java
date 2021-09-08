@@ -2,15 +2,17 @@ package tests;
 
 import core.DriverManager;
 import core.DriverManagerFactory;
-import core.DriverType;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 public class TestInit {
-    DriverManager driverManager;
-    WebDriver webDriver;
+    private DriverManager driverManager;
+    private WebDriver webDriver;
+    private String runningOS = System.getProperty("os");
+    private String runningBrowser = System.getProperty("browser");
+
     public void TestSetup(){
-        driverManager = DriverManagerFactory.getDriverManager(DriverType.CHROME);
+        driverManager = DriverManagerFactory.getDriverManager(runningBrowser);
         webDriver = driverManager.getWebDriver();
     }
 
