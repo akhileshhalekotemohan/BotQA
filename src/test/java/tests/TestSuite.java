@@ -18,7 +18,7 @@ public class TestSuite extends TestInit{
     }
 
     @AfterTest
-    public void cleanup(){
+    public void  cleanup() {
         TestCleanUp();
     }
 }
