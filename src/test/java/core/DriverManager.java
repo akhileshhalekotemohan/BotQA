@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 public abstract class DriverManager {
     protected WebDriver driver;
 
-    protected abstract void createWebDriver();
+    protected abstract void createWebDriver(String os);
 
     public void quitWebDriver(){
         Log.log(DriverManager.class.getName()+ " Quitting driver....Bye!");
@@ -16,10 +16,10 @@ public abstract class DriverManager {
         }
     }
 
-    public WebDriver getWebDriver(){
+    public WebDriver getWebDriver(String os){
         Log.log(DriverManager.class.getName()+ " Initializing driver...");
         if(null==driver){
-            createWebDriver();
+            createWebDriver(os);
         }
         Log.log(DriverManager.class.getName()+ " Changing driver settings...");
         driver.manage().window().maximize();

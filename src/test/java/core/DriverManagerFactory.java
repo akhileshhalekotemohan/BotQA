@@ -1,7 +1,7 @@
 package core;
 
 public class DriverManagerFactory {
-    public static DriverManager getDriverManager(String driverType){
+    public static DriverManager getDriverManager(String driverType, String os){
         DriverManager driverManager;
         DriverType driver;
         Log.log(DriverManagerFactory.class.getName()+ " Choosing appropriate driver as per the request");
