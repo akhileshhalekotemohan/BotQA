@@ -8,8 +8,8 @@ import org.testng.Assert;
 public class TestInit {
     private DriverManager driverManager;
     private WebDriver webDriver;
-    private String runningOS = System.getProperty("os");
-    private String runningBrowser = System.getProperty("browser");
+    private final String runningOS = System.getProperty("os");
+    private final String runningBrowser = System.getProperty("browser");
 
     public void TestSetup(){
         driverManager = DriverManagerFactory.getDriverManager(runningBrowser);

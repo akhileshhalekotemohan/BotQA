@@ -1,7 +1,7 @@
 package core;
 
 public class DriverManagerFactory {
-    public static DriverManager getDriverManager(String driverType){
+    public static DriverManager getDriverManager(String driverType, String os){
         DriverManager driverManager;
         DriverType driver;
         Log.log(DriverManagerFactory.class.getName()+ " Choosing appropriate driver as per the request");
@@ -18,19 +18,19 @@ public class DriverManagerFactory {
         Log.log(DriverManagerFactory.class.getName()+ " Driver init in progress....");
         switch (driver){
             case CHROME:
-                driverManager = new ChromeDriverManager();
+                driverManager = new ChromeDriverManager(os);
                 break;
             case FIREFOX:
-                driverManager = new FireforxDriverManager();
+                driverManager = new FireforxDriverManager(os);
                 break;
             case SAFARI:
-                driverManager = new SafariDriverManager();
+                driverManager = new SafariDriverManager(os);
                 break;
             case IE:
-                driverManager = new IEDriverManager();
+                driverManager = new IEDriverManager(os);
                 break;
             default:
-                driverManager = new ChromeDriverManager();
+                driverManager = new ChromeDriverManager(os);
                 break;
         }
         Log.log(DriverManagerFactory.class.getName()+ " Driver Launch has succeeded");
