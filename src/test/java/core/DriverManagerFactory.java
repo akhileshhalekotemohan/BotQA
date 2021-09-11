@@ -18,19 +18,19 @@ public class DriverManagerFactory {
         Log.log(DriverManagerFactory.class.getName()+ " Driver init in progress....");
         switch (driver){
             case CHROME:
-                driverManager = new ChromeDriverManager(os);
+                driverManager = new ChromeDriverManager();
                 break;
             case FIREFOX:
-                driverManager = new FireforxDriverManager(os);
+                driverManager = new FireforxDriverManager();
                 break;
             case SAFARI:
-                driverManager = new SafariDriverManager(os);
+                driverManager = new SafariDriverManager();
                 break;
             case IE:
-                driverManager = new IEDriverManager(os);
+                driverManager = new IEDriverManager();
                 break;
             default:
-                driverManager = new ChromeDriverManager(os);
+                driverManager = new ChromeDriverManager();
                 break;
         }
         Log.log(DriverManagerFactory.class.getName()+ " Driver Launch has succeeded");

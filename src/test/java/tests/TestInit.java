@@ -12,8 +12,8 @@ public class TestInit {
     private final String runningBrowser = System.getProperty("browser");
 
     public void TestSetup(){
-        driverManager = DriverManagerFactory.getDriverManager(runningBrowser);
-        webDriver = driverManager.getWebDriver();
+        driverManager = DriverManagerFactory.getDriverManager(runningBrowser,runningOS);
+        webDriver = driverManager.getWebDriver(runningOS);
     }
 
     protected void TestCleanUp(){

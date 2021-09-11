@@ -7,7 +7,7 @@ public class IEDriverManager extends DriverManager{
 
 
     @Override
-    protected void createWebDriver() {
+    protected void createWebDriver(String os) {
         Log.log(IEDriverManager.class.getName()+ " Launching IE driver");
         System.setProperty("webdriver.chrome.driver","./src/test/java/resources/IEDriverServer.exe");
         InternetExplorerOptions internetExplorerOptions = new InternetExplorerOptions();
