@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.*;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -11,6 +12,11 @@ public class TestSuite extends TestInit{
         TestSetup();
     }
 
+    @Description("Verify google home page loads")
+    @Epic("EP001")
+    @Feature("Login")
+    @Severity(SeverityLevel.BLOCKER)
+    @Step("Loading home page")
     @Test
     public void testCaseToCheckTitle(){
         openUrl("https://www.google.com");

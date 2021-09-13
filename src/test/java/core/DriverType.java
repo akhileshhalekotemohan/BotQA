@@ -1,5 +1,5 @@
 package core;
 
 public enum DriverType {
-    CHROME,FIREFOX,SAFARI,IE;
+    CHROME,FIREFOX,SAFARI,IE
 }

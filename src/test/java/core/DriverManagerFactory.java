@@ -5,11 +5,11 @@ public class DriverManagerFactory {
         DriverManager driverManager;
         DriverType driver;
         Log.log(DriverManagerFactory.class.getName()+ " Choosing appropriate driver as per the request");
-        if(driverType == null || driverType.toLowerCase().equals("chrome")){
+        if(driverType == null || driverType.equalsIgnoreCase("chrome")){
             driver = DriverType.CHROME;
-        } else if(driverType.toLowerCase().equals("safari")){
+        } else if(driverType.equalsIgnoreCase("safari")){
             driver = DriverType.SAFARI;
-        } else if(driverType.toLowerCase().equals("firefox")){
+        } else if(driverType.equalsIgnoreCase("firefox")){
             driver = DriverType.FIREFOX;
         } else {
             driver = DriverType.IE;
@@ -17,9 +17,6 @@ public class DriverManagerFactory {
 
         Log.log(DriverManagerFactory.class.getName()+ " Driver init in progress....");
         switch (driver){
-            case CHROME:
-                driverManager = new ChromeDriverManager();
-                break;
             case FIREFOX:
                 driverManager = new FireforxDriverManager();
                 break;
