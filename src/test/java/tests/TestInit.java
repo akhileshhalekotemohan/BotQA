@@ -15,7 +15,6 @@ public class TestInit {
         driverManager = DriverManagerFactory.getDriverManager(runningBrowser,runningOS);
         webDriver = driverManager.getWebDriver(runningOS);
     }
-
     protected void TestCleanUp(){
         driverManager.quitWebDriver();
     }
