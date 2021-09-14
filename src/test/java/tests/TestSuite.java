@@ -3,8 +3,11 @@ package tests;
 import io.qameta.allure.*;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import utils.BotQATestListener;
 
+@Listeners(value=BotQATestListener.class)
 public class TestSuite extends TestInit{
 
     @BeforeTest
