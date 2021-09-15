@@ -1,4 +1,5 @@
 package core;
+import utils.Log;
 
 public class DriverManagerFactory {
     public static DriverManager getDriverManager(String driverType, String os){

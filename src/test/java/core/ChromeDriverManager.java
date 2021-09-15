@@ -3,6 +3,7 @@ package core;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.Log;
 
 public class ChromeDriverManager extends DriverManager{
 

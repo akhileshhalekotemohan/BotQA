@@ -3,6 +3,8 @@ package core;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import utils.Log;
+
 
 public class FireforxDriverManager extends DriverManager {
 

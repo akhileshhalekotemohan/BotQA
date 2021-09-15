@@ -2,6 +2,7 @@ package core;
 
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
+import utils.Log;
 
 public class IEDriverManager extends DriverManager{
 

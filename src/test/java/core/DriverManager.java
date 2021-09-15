@@ -1,6 +1,8 @@
 package core;
 
 import org.openqa.selenium.WebDriver;
+import utils.Log;
+
 import java.util.concurrent.TimeUnit;
 
 public abstract class DriverManager {

@@ -2,6 +2,8 @@ package core;
 
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
+import utils.Log;
+
 
 public class SafariDriverManager extends DriverManager{
 
