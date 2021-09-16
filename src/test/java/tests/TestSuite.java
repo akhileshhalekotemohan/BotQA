@@ -22,8 +22,32 @@ public class TestSuite extends TestInit{
     @Step("Loading home page")
     @Test
     public void testCaseToCheckTitle(){
-        openUrl("https://www.google.com");
+        openUrl(websiteUrl);
         assertTitle("Google");
+    }
+
+    public void testCaseToCheckAboutMe(){
+
+    }
+
+    public void testCaseToCheckPortfolio(){
+
+    }
+
+    public void testCaseToCheckEmailId(){
+
+    }
+
+    public void testCaseToCheckMenus(){
+
+    }
+
+    public void testCaseToCheckHeading(){
+
+    }
+
+    public void testCaseToCheckTextContent(){
+
     }
 
     @AfterTest
