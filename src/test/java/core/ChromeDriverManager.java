@@ -1,11 +1,11 @@
-package core;
+package test.java.core;
 
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
-import utils.Log;
+import test.java.utils.Log;
 
-public class ChromeDriverManager extends DriverManager{
+public class ChromeDriverManager extends DriverManager {
 
     @Override
     protected void createWebDriver(String os) {

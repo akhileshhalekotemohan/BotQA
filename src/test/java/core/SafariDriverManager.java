@@ -1,8 +1,8 @@
-package core;
+package test.java.core;
 
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
-import utils.Log;
+import test.java.utils.Log;
 
 
 public class SafariDriverManager extends DriverManager{
