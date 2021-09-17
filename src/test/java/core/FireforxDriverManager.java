@@ -1,9 +1,9 @@
-package core;
+package test.java.core;
 
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import utils.Log;
+import test.java.utils.Log;
 
 
 public class FireforxDriverManager extends DriverManager {

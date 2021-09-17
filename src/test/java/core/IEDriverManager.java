@@ -1,8 +1,8 @@
-package core;
+package test.java.core;
 
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
-import utils.Log;
+import test.java.utils.Log;
 
 public class IEDriverManager extends DriverManager{
 

@@ -1,9 +1,9 @@
-package tests;
+package test.java.tests;
 
-import core.DriverManager;
-import core.DriverManagerFactory;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import test.java.core.DriverManager;
+import test.java.core.DriverManagerFactory;
+import org.openqa.selenium.WebDriver;
 
 public class TestInit {
     private DriverManager driverManager;

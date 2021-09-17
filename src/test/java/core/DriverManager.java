@@ -1,7 +1,7 @@
-package core;
+package test.java.core;
 
 import org.openqa.selenium.WebDriver;
-import utils.Log;
+import test.java.utils.Log;
 
 import java.util.concurrent.TimeUnit;
 

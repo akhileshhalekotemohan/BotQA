@@ -1,4 +1,4 @@
-package pageobjects;
+package test.java.pageobjects;
 
 /**
  * All Pages should have respective page objects and
